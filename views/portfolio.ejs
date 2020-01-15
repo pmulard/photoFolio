@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<!-- CSS style sheet -->
+	<link rel="stylesheet" type="text/css" href="/css/portfolioStyle.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=League+Script|Nixie+One&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+<div class="parallax">
+	<div class="container-fluid logo-box-container">
+		<div class="logo-box col-xs-6 col-sm-6 col-lg-6 col-xl-6">
+			 <a class="logo" href="#">
+				<img src="../logo.png" class="d-inline-block align-top" alt="">
+	  		</a>
+		</div>
+	</div>
+	<h1>Photography</h1>
+	<p>Select a photo for print options</p>
+</div>
+
+
+<div class="container-fluid">
+	
+	<!-- <div id="lightbox">
+		<div class="lightbox-image">
+			
+		</div>
+		<div class="img-text"></div>
+	</div> -->
+
+	<div class="row">
+		<% for (var i = 0; i < photos.length; i++) { %>
+			<div class="col-xs-6 col-sm-6 col-lg-4 col-xl-3 no-gutter">
+				<div id="image<%= i %>" class="image-frame">
+					<div class="img-body">
+						<a href="<%= photos[i].url%>" class="full-img"> <img class="frame-img" src="<%= photos[i].url %>"> </a>
+					</div>
+					<!-- <div class="img-title">
+						<h4 style="text-align: center"><%= photos[i].title %></h4>
+					</div> -->
+				</div>
+			</div>
+		<% } %>
+	</div>
+</div>
+
+
+
+</body>
+</html>

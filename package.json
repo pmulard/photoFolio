@@ -1,0 +1,22 @@
+{
+	"name": "Photo_Portfolio",
+	"version": "1.0.0",
+	"description": "Portfolio website for photography",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"keywords": [],
+	"author": "Peter Mulard",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"ejs": "^2.6.1",
+		"ekko-lightbox": "^5.3.0",
+		"express": "^4.17.1",
+		"fs": "0.0.0",
+		"http": "0.0.0",
+		"jquery": "^3.4.1",
+		"mongodb": "^3.4.1",
+		"path": "^0.12.7"
+	}
+}
